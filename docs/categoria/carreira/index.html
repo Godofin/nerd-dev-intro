@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0E0B16">
+  <title>Carreira: artigos e dicas | Blog Nerd Dev</title>
+  <meta name="description" content="Caminhos, áreas e primeiros passos para entrar no mercado de tecnologia.">
+  <link rel="canonical" href="https://godofin.github.io/nerd-dev-intro/categoria/carreira">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Carreira: artigos e dicas | Blog Nerd Dev">
+  <meta property="og:description" content="Caminhos, áreas e primeiros passos para entrar no mercado de tecnologia.">
+  <meta property="og:url" content="https://godofin.github.io/nerd-dev-intro/categoria/carreira">
+  <meta property="og:image" content="https://godofin.github.io/nerd-dev-intro/assets/img/og.jpg">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Carreira", "description": "Caminhos, áreas e primeiros passos para entrar no mercado de tecnologia.", "url": "https://godofin.github.io/nerd-dev-intro/categoria/carreira", "inLanguage": "pt-BR"}</script>
+  <link rel="icon" href="/nerd-dev-intro/assets/img/logo-tile.jpg" type="image/jpeg">
+  <link rel="alternate" type="application/rss+xml" title="Blog da Nerd Dev" href="/nerd-dev-intro/feed.xml">
+  <link rel="preload" href="/nerd-dev-intro/assets/fonts/bebas-neue-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/nerd-dev-intro/assets/fonts/abel-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/nerd-dev-intro/assets/site.css">
+  <script>window.NERDDEV_STATIC=true;window.NERDDEV_BASE="/nerd-dev-intro";</script>
+</head>
+<body data-cat="carreira">
+  <a class="skip" href="#lista">Ir para os artigos</a>
+
+  <header class="nav">
+    <div class="wrap nav__in">
+      <a class="brand" href="/nerd-dev-intro/" aria-label="Nerd Dev, página inicial">
+        <img class="brand__mark" src="/nerd-dev-intro/assets/img/mark.png" width="30" height="29" alt="">
+        <span class="brand__word">NERD DEV.</span>
+      </a>
+      <nav class="nav__links" aria-label="Principal">
+        <a href="/nerd-dev-intro/#conteudo">Conteúdo</a>
+        <a href="/nerd-dev-intro/#simbolo">Símbolo</a>
+        <a href="/nerd-dev-intro/blog/" aria-current="page">Blog</a>
+      </nav>
+      <a class="btn btn--sm" href="/nerd-dev-intro/#seguir">Seguir a Nerd Dev</a>
+    </div>
+  </header>
+
+  <nav class="cats" aria-label="Categorias"><div class="wrap cats__in"><a href="/nerd-dev-intro/blog/">Todas</a><a href="/nerd-dev-intro/categoria/nintendo/" class="cat-nintendo">Nintendo</a><a href="/nerd-dev-intro/categoria/games/" class="cat-games">Games</a><a href="/nerd-dev-intro/categoria/cultura-pop/" class="cat-cultura-pop">Cultura Pop</a><a href="/nerd-dev-intro/categoria/mundo-de-dados/" class="cat-mundo-de-dados">Mundo de Dados</a><a href="/nerd-dev-intro/categoria/ia/" class="cat-ia">IA</a><a href="/nerd-dev-intro/categoria/programacao/" class="cat-programacao">Programação</a><a href="/nerd-dev-intro/categoria/ferramentas/" class="cat-ferramentas">Ferramentas</a><a href="/nerd-dev-intro/categoria/carreira/" class="cat-carreira" aria-current="page">Carreira</a></div></nav>
+
+  <main>
+    <section class="phead">
+      <div class="wrap">
+        <h1>Carreira</h1>
+        <p>Caminhos, áreas e primeiros passos para entrar no mercado de tecnologia.</p>
+      </div>
+    </section>
+
+    <section class="wrap" id="feat-sec" hidden aria-label="Destaques">
+      <div class="feat" id="feat"></div>
+    </section>
+
+    <section class="hl" id="hl-sec" hidden>
+      <div class="wrap">
+        <div class="hl__top">
+          <h2 class="sech"><span class="bolt" aria-hidden="true"></span>Mais destaques</h2>
+          <div class="tabs" id="tabs" role="group" aria-label="Filtrar destaques por categoria"></div>
+        </div>
+        <div class="pgrid pgrid--three" id="hl"></div>
+      </div>
+    </section>
+
+    <div class="wrap cols">
+      <section class="listcol" id="lista" aria-live="polite">
+        <div class="listhead">
+          <h2 class="sech" id="listtitle"><span class="bolt" aria-hidden="true"></span>Últimas notícias</h2>
+          <div class="field">
+            <label for="q">Buscar artigos</label>
+            <input id="q" type="search" placeholder="Ex.: Mario, SQL, IA" autocomplete="off" maxlength="80">
+          </div>
+        </div>
+        <div id="list"></div>
+        <div class="state" id="state" hidden></div>
+        <div class="more"><button class="btn btn--ghost" id="more" type="button" hidden>Ver mais artigos</button></div>
+        <noscript><p class="sub">Ative o JavaScript para ver a lista de artigos ou assine o <a href="/nerd-dev-intro/feed.xml">feed RSS</a>.</p></noscript>
+      </section>
+
+      <aside class="side" aria-label="Barra lateral">
+        <section>
+          <h2 class="sech"><span class="bolt" aria-hidden="true"></span>Categorias</h2>
+          <ul class="side__cats" id="side-cats"></ul>
+        </section>
+        <section class="follow">
+          <h2>Viva o hype com a gente</h2>
+          <p>Programação e cultura pop explicadas de forma simples.</p>
+          <a class="btn btn--light" href="/nerd-dev-intro/#seguir">Seguir a Nerd Dev</a>
+          <a class="rss" href="/nerd-dev-intro/feed.xml"><span class="ico" style="--i:url(icons/rss.svg)" aria-hidden="true"></span> Assinar o feed RSS</a>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot__in">
+      <a class="brand" href="/nerd-dev-intro/" aria-label="Nerd Dev, página inicial">
+        <img class="brand__mark" src="/nerd-dev-intro/assets/img/mark.png" width="30" height="29" alt="">
+        <span class="brand__word">NERD DEV.</span>
+      </a>
+      <p class="foot__tag">Programação e cultura pop de forma didática.</p>
+      <ul class="social" aria-label="Feed">
+        <li><a href="/nerd-dev-intro/feed.xml" aria-label="Feed RSS do blog"><span class="ico ico--lg" style="--i:url(icons/rss.svg)" aria-hidden="true"></span></a></li>
+      </ul>
+      <p class="foot__copy">© 2026 Nerd Dev. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="/nerd-dev-intro/assets/site.js" defer></script>
+  <script src="/nerd-dev-intro/assets/blog.js" defer></script>
+</body>
+</html>

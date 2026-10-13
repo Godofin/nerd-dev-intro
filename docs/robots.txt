@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /docs
+
+Sitemap: https://godofin.github.io/nerd-dev-intro/sitemap.xml

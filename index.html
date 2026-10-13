@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nerd Dev | Programação e cultura pop, sem complicar</title>
+  <meta name="description" content="Marca 100% digital com as novidades do mundo da programação e da cultura pop, explicadas de forma didática. Artigos, dicas e carreira em tecnologia.">
+  <meta name="theme-color" content="#0E0B16">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nerd Dev | Programação e cultura pop, sem complicar">
+  <meta property="og:description" content="Novidades do mundo dev explicadas de forma simples, direta e com a referência nerd que você já conhece.">
+  <meta property="og:image" content="/assets/img/og.jpg">
+  <link rel="icon" href="/assets/img/logo-tile.jpg" type="image/jpeg">
+  <link rel="alternate" type="application/rss+xml" title="Blog da Nerd Dev" href="/feed.xml">
+  <link rel="preload" href="/assets/fonts/bebas-neue-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/abel-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/site.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"Nerd Dev","description":"Marca 100% digital com novidades do mundo da programação e da cultura pop, de forma didática.","logo":"/assets/img/logo-tile.jpg"}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="wrap nav__in">
+      <a class="brand" href="#topo" aria-label="Nerd Dev, início">
+        <img class="brand__mark" src="/assets/img/mark.png" width="30" height="29" alt="">
+        <span class="brand__word">NERD DEV.</span>
+      </a>
+      <nav class="nav__links" aria-label="Principal">
+        <a href="#conteudo">Conteúdo</a>
+        <a href="#simbolo">Símbolo</a>
+        <a href="/blog">Blog</a>
+      </nav>
+      <a class="btn btn--sm" href="#seguir" data-social="primary" data-magnetic>Seguir a Nerd Dev</a>
+    </div>
+  </header>
+
+  <main id="topo">
+    <!-- 1. HERO: shader em tela cheia, headline mascarada -->
+    <section class="hero" id="hero">
+      <canvas class="hero__gl" aria-hidden="true"></canvas>
+      <div class="hero__veil" aria-hidden="true"></div>
+      <img class="hero__mark" src="/assets/img/mark.png" width="613" height="585" alt="" decoding="async">
+      <div class="wrap hero__in">
+        <h1 class="hero__h1">
+          <span class="ln"><span>Programação e cultura pop,</span></span>
+          <span class="ln ln--accent"><span>sem complicar.</span></span>
+        </h1>
+        <p class="lead hero__lead">Novidades do mundo dev explicadas de forma simples, direta e com a referência nerd que você já conhece.</p>
+        <div class="hero__cta">
+          <a class="btn btn--lg" href="#seguir" data-social="primary" data-magnetic>Seguir a Nerd Dev <span class="ico" style="--i:url(icons/arrow-up-right.svg)" aria-hidden="true"></span></a>
+          <a class="btn btn--ghost btn--lg" href="#conteudo" data-magnetic>Ver conteúdos</a>
+        </div>
+        <pre class="code" role="img" aria-label="Trecho de código: ponto de entrada, função main, imprime Hello World e apresentação Nerd Dev"><span class="code__l" style="--n:15;--t:0s"><b>1</b> .[&lt;ENTRYPOINT&gt;</span>
+<span class="code__l" style="--n:16;--t:.9s"><b>2</b> .LET.MAIN..ARGV</span>
+<span class="code__l" style="--n:26;--t:1.7s"><b>3</b> ....PRINTFN."HELLO, WORLD!"</span>
+<span class="code__l" style="--n:28;--t:2.9s"><b>4</b> ....0..APRESENTACAO NERD DEV.</span></pre>
+      </div>
+    </section>
+
+    <!-- 2. FAIXA (único marquee da página) -->
+    <section class="strip" aria-label="Assuntos">
+      <div class="strip__track" aria-hidden="true">
+        <div class="strip__row">
+          <span>Notícias</span><i></i><span>Tutoriais</span><i></i><span>Games</span><i></i><span>Filmes</span><i></i><span>Séries</span><i></i><span>Animes</span><i></i><span>Inteligência artificial</span><i></i><span>Carreira</span><i></i>
+        </div>
+        <div class="strip__row">
+          <span>Notícias</span><i></i><span>Tutoriais</span><i></i><span>Games</span><i></i><span>Filmes</span><i></i><span>Séries</span><i></i><span>Animes</span><i></i><span>Inteligência artificial</span><i></i><span>Carreira</span><i></i>
+        </div>
+      </div>
+      <p class="sr">Notícias, tutoriais, games, filmes, séries, animes, inteligência artificial e carreira.</p>
+    </section>
+
+    <!-- 3. MANIFESTO: o texto acende palavra por palavra ao rolar -->
+    <section class="manifesto" id="manifesto">
+      <div class="wrap">
+        <p class="manifesto__text" data-words>A Nerd Dev é 100% digital. Traz as novidades da programação e da cultura pop de forma didática, simples e moderna.</p>
+      </div>
+    </section>
+
+    <!-- 4. CONTEÚDO: pilha de cartões que gruda ao rolar -->
+    <section class="content" id="conteudo">
+      <div class="wrap">
+        <h2 class="content__h">O que você encontra por aqui</h2>
+        <div class="stack">
+          <article class="scard scard--a" style="--i:0">
+            <div class="scard__txt">
+              <span class="ico ico--xl" style="--i:url(icons/newspaper.svg)" aria-hidden="true"></span>
+              <h3>Novidades do mundo dev</h3>
+              <p>Lançamentos, linguagens, ferramentas e tendências contados sem enrolação.</p>
+            </div>
+            <span class="scard__big" aria-hidden="true">Notícias</span>
+          </article>
+          <article class="scard scard--b" style="--i:1">
+            <div class="scard__txt">
+              <span class="ico ico--xl" style="--i:url(icons/game-controller.svg)" aria-hidden="true"></span>
+              <h3>Cultura pop</h3>
+              <p>Games, filmes, séries e animes pela lente de quem programa.</p>
+            </div>
+            <span class="scard__big" aria-hidden="true">Pop</span>
+          </article>
+          <article class="scard scard--c" style="--i:2">
+            <div class="scard__txt">
+              <span class="ico ico--xl" style="--i:url(icons/graduation-cap.svg)" aria-hidden="true"></span>
+              <h3>Programação didática</h3>
+              <p>Conceitos explicados passo a passo, para quem está começando.</p>
+            </div>
+            <span class="scard__big" aria-hidden="true">Aprender</span>
+          </article>
+          <article class="scard scard--d" style="--i:3">
+            <div class="scard__txt">
+              <span class="ico ico--xl" style="--i:url(icons/wrench.svg)" aria-hidden="true"></span>
+              <h3>Ferramentas e dicas</h3>
+              <p>O que usar, como configurar e o que vale o seu tempo.</p>
+            </div>
+            <span class="scard__big" aria-hidden="true">Dicas</span>
+          </article>
+          <article class="scard scard--e" style="--i:4">
+            <div class="scard__txt">
+              <span class="ico ico--xl" style="--i:url(icons/briefcase.svg)" aria-hidden="true"></span>
+              <h3>Carreira em tecnologia</h3>
+              <p>Caminhos, áreas e primeiros passos para entrar no mercado dev.</p>
+            </div>
+            <span class="scard__big" aria-hidden="true">Carreira</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. BLOG: últimos artigos vindos da API (a seção some se a API estiver fora do ar) -->
+    <section class="latest" id="blog" hidden>
+      <div class="wrap">
+        <h2 class="latest__h"><a href="/blog">Direto do blog <span class="ico ico--lg" style="--i:url(icons/arrow-right.svg)" aria-hidden="true"></span></a></h2>
+        <div class="pgrid" id="latest-grid"></div>
+      </div>
+    </section>
+
+    <!-- 6. SÍMBOLO -->
+    <section class="symbol" id="simbolo">
+      <div class="wrap symbol__grid">
+        <div class="symbol__fig reveal">
+          <div class="tilt" data-tilt>
+            <img src="/assets/img/logo-tile.jpg" width="720" height="720" alt="Logotipo da Nerd Dev: um chevron geométrico em branco sobre gradiente de azul-petróleo para magenta" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="symbol__copy">
+          <h2 class="reveal">Cada traço do logo tem um motivo.</h2>
+          <dl class="parts">
+            <div class="part reveal">
+              <dt>Seta</dt>
+              <dd>É o cursor do mouse, o gesto mais conhecido de quem vive no digital.</dd>
+            </div>
+            <div class="part reveal">
+              <dt>Lápis</dt>
+              <dd>Escondido no desenho, representa a didática e o fim educacional do projeto.</dd>
+            </div>
+            <div class="part reveal">
+              <dt>Flecha</dt>
+              <dd>Simboliza o objetivo de atingir de forma significativa o público a que se destina.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CTA -->
+    <section class="cta" id="seguir">
+      <div class="cta__blob" aria-hidden="true"></div>
+      <div class="wrap cta__in">
+        <h2 class="reveal">Aprender programação não precisa ser chato.</h2>
+        <a class="btn btn--light btn--lg reveal" style="--d:.08s" href="#rodape" data-social="primary" data-magnetic>Seguir a Nerd Dev <span class="ico" style="--i:url(icons/arrow-up-right.svg)" aria-hidden="true"></span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot" id="rodape">
+    <div class="wrap foot__in">
+      <a class="brand" href="#topo" aria-label="Nerd Dev, voltar ao topo">
+        <img class="brand__mark" src="/assets/img/mark.png" width="30" height="29" alt="">
+        <span class="brand__word">NERD DEV.</span>
+      </a>
+      <p class="foot__tag">Programação e cultura pop de forma didática.</p>
+      <ul class="social" aria-label="Redes sociais e feed">
+        <!-- TODO: trocar os href="#" pelos perfis reais -->
+        <li><a href="#" data-social="instagram" aria-label="Instagram da Nerd Dev"><span class="ico ico--lg" style="--i:url(icons/instagram-logo.svg)" aria-hidden="true"></span></a></li>
+        <li><a href="#" data-social="youtube" aria-label="YouTube da Nerd Dev"><span class="ico ico--lg" style="--i:url(icons/youtube-logo.svg)" aria-hidden="true"></span></a></li>
+        <li><a href="#" data-social="tiktok" aria-label="TikTok da Nerd Dev"><span class="ico ico--lg" style="--i:url(icons/tiktok-logo.svg)" aria-hidden="true"></span></a></li>
+        <li><a href="/feed.xml" aria-label="Feed RSS do blog"><span class="ico ico--lg" style="--i:url(icons/rss.svg)" aria-hidden="true"></span></a></li>
+      </ul>
+      <p class="foot__copy">© 2026 Nerd Dev. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="/assets/gl.js" defer></script>
+  <script src="/assets/site.js" defer></script>
+  <script src="/assets/blog.js" defer></script>
+</body>
+</html>

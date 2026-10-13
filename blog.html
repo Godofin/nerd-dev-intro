@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0E0B16">
+  <!--HEAD-->
+  <link rel="icon" href="/assets/img/logo-tile.jpg" type="image/jpeg">
+  <link rel="alternate" type="application/rss+xml" title="Blog da Nerd Dev" href="/feed.xml">
+  <link rel="preload" href="/assets/fonts/bebas-neue-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/abel-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body data-cat="<!--CAT-->">
+  <a class="skip" href="#lista">Ir para os artigos</a>
+
+  <header class="nav">
+    <div class="wrap nav__in">
+      <a class="brand" href="/" aria-label="Nerd Dev, página inicial">
+        <img class="brand__mark" src="/assets/img/mark.png" width="30" height="29" alt="">
+        <span class="brand__word">NERD DEV.</span>
+      </a>
+      <nav class="nav__links" aria-label="Principal">
+        <a href="/#conteudo">Conteúdo</a>
+        <a href="/#simbolo">Símbolo</a>
+        <a href="/blog" aria-current="page">Blog</a>
+      </nav>
+      <a class="btn btn--sm" href="/#seguir">Seguir a Nerd Dev</a>
+    </div>
+  </header>
+
+  <!--CATS-->
+
+  <main>
+    <section class="phead">
+      <div class="wrap">
+        <h1><!--H1--></h1>
+        <p><!--LEAD--></p>
+      </div>
+    </section>
+
+    <section class="wrap" id="feat-sec" hidden aria-label="Destaques">
+      <div class="feat" id="feat"></div>
+    </section>
+
+    <section class="hl" id="hl-sec" hidden>
+      <div class="wrap">
+        <div class="hl__top">
+          <h2 class="sech"><span class="bolt" aria-hidden="true"></span>Mais destaques</h2>
+          <div class="tabs" id="tabs" role="group" aria-label="Filtrar destaques por categoria"></div>
+        </div>
+        <div class="pgrid pgrid--three" id="hl"></div>
+      </div>
+    </section>
+
+    <div class="wrap cols">
+      <section class="listcol" id="lista" aria-live="polite">
+        <div class="listhead">
+          <h2 class="sech" id="listtitle"><span class="bolt" aria-hidden="true"></span>Últimas notícias</h2>
+          <div class="field">
+            <label for="q">Buscar artigos</label>
+            <input id="q" type="search" placeholder="Ex.: Mario, SQL, IA" autocomplete="off" maxlength="80">
+          </div>
+        </div>
+        <div id="list"></div>
+        <div class="state" id="state" hidden></div>
+        <div class="more"><button class="btn btn--ghost" id="more" type="button" hidden>Ver mais artigos</button></div>
+        <noscript><p class="sub">Ative o JavaScript para ver a lista de artigos ou assine o <a href="/feed.xml">feed RSS</a>.</p></noscript>
+      </section>
+
+      <aside class="side" aria-label="Barra lateral">
+        <section>
+          <h2 class="sech"><span class="bolt" aria-hidden="true"></span>Categorias</h2>
+          <ul class="side__cats" id="side-cats"></ul>
+        </section>
+        <section class="follow">
+          <h2>Viva o hype com a gente</h2>
+          <p>Programação e cultura pop explicadas de forma simples.</p>
+          <a class="btn btn--light" href="/#seguir">Seguir a Nerd Dev</a>
+          <a class="rss" href="/feed.xml"><span class="ico" style="--i:url(icons/rss.svg)" aria-hidden="true"></span> Assinar o feed RSS</a>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot__in">
+      <a class="brand" href="/" aria-label="Nerd Dev, página inicial">
+        <img class="brand__mark" src="/assets/img/mark.png" width="30" height="29" alt="">
+        <span class="brand__word">NERD DEV.</span>
+      </a>
+      <p class="foot__tag">Programação e cultura pop de forma didática.</p>
+      <ul class="social" aria-label="Feed">
+        <li><a href="/feed.xml" aria-label="Feed RSS do blog"><span class="ico ico--lg" style="--i:url(icons/rss.svg)" aria-hidden="true"></span></a></li>
+      </ul>
+      <p class="foot__copy">© 2026 Nerd Dev. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="/assets/site.js" defer></script>
+  <script src="/assets/blog.js" defer></script>
+</body>
+</html>
